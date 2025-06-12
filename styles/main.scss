@@ -1,0 +1,25 @@
+@use "reset";
+@use "variables" as var;
+@use "typography";
+@use "buttons";
+@use "header";
+@use "linkGroup";
+@use "imageGallery";
+@use "modal";
+@use "footer";
+
+body {
+  font-family: var.$font-stack;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: var.$main;
+  max-width: 1260px;
+  margin: auto;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}

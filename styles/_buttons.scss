@@ -1,0 +1,66 @@
+@use 'variables' as var;
+
+a.btn {
+  text-decoration: none;
+}
+
+a.btn:focus-visible,
+.btn:focus-visible {
+  outline: var.$tertiary solid 2px;
+  outline-offset: 2px;
+}
+
+@each $btn, $color in var.$btn-colors {
+  .btn-#{$btn} {
+    cursor: pointer;
+    background-color: $color;
+    color: var.$white;
+    padding: var.$xs var.$md;
+    border-radius: var.$xs;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var.$xs;
+    font-weight: var.$fw-semibold;
+    transition: all 0.2s ease-in-out;
+    i {
+      margin-block: 0;
+      font-size: 1rem;
+      color: var.$white;
+      transition: all 0.2s ease-in-out;
+    }
+    &:hover {
+      background-color: var.$quaternary;
+      color: $color;
+      i {
+        color: $color;
+      }
+    }
+  }
+}
+
+.btn-play {
+  padding: var.$xs;
+  border-radius: 100%;
+  width: var.$xxl;
+  height: var.$xxl;
+  i {
+    font-size: 24px;
+    margin-left: 3px;
+  }
+}
+
+.btn-close {
+  width: var.$xxl;
+  height: var.$xxl;
+  padding: 0;
+  background-color: var.$danger;
+  border-radius: 100%;
+  i {
+    color: var.$white;
+    font-size: 24px;
+  }
+  &:hover {
+    outline: 2px solid var.$danger;
+  }
+}

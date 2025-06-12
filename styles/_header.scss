@@ -1,0 +1,11 @@
+@use 'variables' as var;
+
+.header {
+  max-width: 800px;
+  margin: auto;
+  &__title {
+    @media (min-width: var.$breakpoint-md) {
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,72 @@
+// Fonts
+$font-stack: 'Inter', sans-serif;
+
+// Foont weights
+$fw-thin: 100;
+$fw-extralight: 200;
+$fw-light: 300;
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semibold: 600;
+$fw-bold: 700;
+$fw-extrabold: 800;
+$fw-black: 900;
+
+// Font sizes
+$font-sizes: (
+  h1: 3rem,
+  // 48px
+  h2: 2.375rem,
+  // 38px
+  h3: 2rem,
+  // 32px
+  h4: 1.75rem,
+  // 28px
+  h5: 1.5rem,
+  // 24px
+  h6: 1.125rem, // 18px
+);
+
+// Colors
+$primary: #13304a;
+$secondary: #076d59;
+$tertiary: #37b971;
+$quaternary: #e9ece7;
+$black: #000000;
+$white: #ffffff;
+$content: #222222;
+$danger: #9f0000;
+
+// Buttons
+$btn-colors: (
+  primary: $primary,
+  secondary: $secondary,
+  tertiary: $tertiary,
+  danger: $danger,
+);
+
+// Spacing
+$xxs: 4px;
+$xs: 8px;
+$sm: 16px;
+$md: 24px;
+$lg: 32px;
+$xl: 40px;
+$xxl: 48px;
+
+$base: 15px;
+$main: calc($base * 2);
+$margin: calc($base * 1.25);
+$gallery-gap: calc($base * 2);
+$gallery-radius: calc($base * 2);
+$modal-radius: 20px;
+$modal-padding: calc($base * 2);
+
+// breakpoints
+
+$breakpoint-xs: 375px;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;

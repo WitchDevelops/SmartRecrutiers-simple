@@ -1,0 +1,75 @@
+@use 'variables' as var;
+
+// Apply font sizes for headings using a loop
+@each $element, $size in var.$font-sizes {
+  #{$element} {
+    font-family: var.$font-stack;
+    font-size: $size;
+    color: var.$primary;
+    font-weight: var.$fw-bold;
+    line-height: 110%;
+    letter-spacing: 0px;
+    margin-block: 9px;
+  }
+}
+
+p,
+em,
+i,
+b,
+strong {
+  font-family: var.$font-stack;
+  font-size: 1rem;
+  color: var.$primary;
+  font-weight: var.$fw-regular;
+  line-height: 140%;
+  letter-spacing: 0px;
+  margin-block: 20px;
+  color: var.$content;
+}
+
+em,
+i {
+  font-style: italic;
+  font-size: inherit;
+}
+
+b,
+strong {
+  font-weight: var.$fw-bold;
+  font-size: inherit;
+}
+
+a:not(.btn) {
+  font-family: var.$font-stack;
+  font-size: 1rem;
+  color: var.$secondary;
+  font-weight: var.$fw-medium;
+  line-height: 140%;
+  letter-spacing: 0px;
+  margin-block: 20px;
+  text-decoration: underline;
+  text-underline-offset: 0%;
+  text-decoration-thickness: 0%;
+  text-decoration-style: solid;
+  &:focus-visible {
+    outline: var.$tertiary solid 2px;
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+}
+
+button {
+  font-family: var.$font-stack;
+  font-size: 1rem;
+  color: var.$secondary;
+  font-weight: var.$fw-semibold;
+  line-height: 140%;
+  letter-spacing: 0px;
+  margin-block: 9px;
+  vertical-align: middle;
+}
+
+.text--small {
+  font-size: 0.833rem;
+}
