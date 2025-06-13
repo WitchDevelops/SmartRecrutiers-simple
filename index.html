@@ -62,18 +62,43 @@
                 <div class="gallery__item--video-container">
                     <img class="gallery__item--video-img" src="./images/media-3.png" alt="Description of Image 3"
                         title="Description of Image 3">
-                    <button class="gallery__item--video-btn btn btn-primary btn-play"
-                        data-video-url="https://www.youtube.com/watch?v=x6iyz1AQhuU">
+                    <button class="gallery__item--video-btn btn btn-primary btn-play">
                         <i class="fa-solid fa-play"></i>
                     </button>
                 </div>
             </div>
+
             <div class="gallery__item">
                 <div class="gallery__item--img-container">
                     <img class="gallery__item--img-img" src="./images/media-5.png" alt="Description of Image 5"
                         title="Description of Image 5">
                 </div>
             </div>
+
+            <dialog id="video-dialog" class="dialog">
+                <div class="dialog-content">
+                    <div class="dialog-content__header">
+                        <h2 class="dialog-content__title">Modal heading</h2>
+                        <button type="button" class="dialog-content__button close-dialog btn btn-danger btn-close"
+                            aria-label="Close video">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <p class="dialog-content__text">Lorem <em>ipsum</em> dolor sit amet, <strong>consectetur</strong>
+                        adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad <a href="#"
+                            target="_blank">minim</a> veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea
+                        commodo consequat.</p>
+                    <div id="video-container" class="dialog-content__video--container">
+                        <iframe class="dialog-content__video--video"
+                            src="https://www.youtube.com/embed/x6iyz1AQhuU?si=GaHSWBFI3dra_mtF"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </dialog>
         </section>
 
         <footer class="copyright">
