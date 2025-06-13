@@ -24,8 +24,8 @@ This version of the solution is ready to be uploaded and used elsewhere.
 
 ## Live
 
-Live version is deployed with Netlify and can be found here: https://smartrecruiters-task.netlify.app/
+Live version is deployed with Netlify and can be found here: https://smartrecrutiers-simple.netlify.app/
 
 Project deploy status:
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/788f5094-721c-4d0a-adc8-7fa9417e81b2/deploy-status)](https://app.netlify.com/projects/smartrecruiters-task/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a6d951a2-2254-4fe3-b48a-e9b7d341bdce/deploy-status)](https://app.netlify.com/projects/smartrecrutiers-simple/deploys)
